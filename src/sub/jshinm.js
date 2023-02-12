@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "../App.css"
+import "../App.css";
 
-export default class jshinm extends Component{
+export default class Jshinm extends Component{
     render() {
         return (
             <div class="embed">
