@@ -1,19 +1,18 @@
-import wip from './img/cone.png';
-import underconst from './img/underconst.png';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+
+import Notfound from './sub/404';
+import Jshinm from './sub/jshinm';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={wip} className="App-logo" alt="logo" />
-        
-        <p>
-          <img src={underconst} alt="construction" width="30%"/>
-          {/* Website Under Construction */}
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Notfound />} />
+        <Route path="/jshinm" element={<Jshinm />} />
+      </Routes>
+    </Router>
   );
 }
 
