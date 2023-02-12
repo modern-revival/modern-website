@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Notfound from './sub/404';
 import Jshinm from './sub/jshinm';
